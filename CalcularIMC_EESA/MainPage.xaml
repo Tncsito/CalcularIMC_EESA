@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalcularIMC_EESA.MainPage">
+
+    <StackLayout BackgroundColor="#e5e8e8">
+        <Frame BackgroundColor="#212121" Padding="24" CornerRadius="20">
+            <Label Text="Calcular IMC" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Vamos a calcular tu IMC!" FontSize="Title" HorizontalTextAlignment="Center" />
+        <Label Text="Dame tu peso" HorizontalTextAlignment="Center" />
+        <Entry Placeholder="Peso" HorizontalTextAlignment="Center" x:Name="peso"/>
+        <Label Text="Dame tu altura" HorizontalTextAlignment="Center" />
+        <Entry Placeholder="Altura" HorizontalTextAlignment="Center" x:Name="altura"/>
+        <Button Text="Enviar" CornerRadius="50" Clicked="Button_Clicked" />
+        <Label Text="Resultado del IMC" HorizontalTextAlignment="Center" />
+        <Entry Placeholder="IMC" HorizontalTextAlignment="Center" IsEnabled="False" x:Name="imc"/>
+    </StackLayout>
+
+</ContentPage>
